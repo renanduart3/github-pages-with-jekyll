@@ -11,3 +11,12 @@ I'm glad you are here. I plan to talk about ...
 <h3>
     GH Pages with Jekyll
 </h3>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="/github-pages-with-jekyll{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
